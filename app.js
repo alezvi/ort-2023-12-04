@@ -27,10 +27,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Quieres agregar rutas ? AQUI
 var indexRouter = require('./routes/index');
-var textsRouter = require('./routes/texts');
+var phrasesRouter = require('./routes/phrases');
 
 app.use('/', indexRouter);
-app.use('/texts', textsRouter);
+app.use('/phrases', phrasesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
